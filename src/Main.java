@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Scanner;
 public class Main {
     public static int maxInList(List array){
-        return (int)Collections.max(array);
+        return (int)Collections.min(array);
     }
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<Integer>();
@@ -16,6 +16,6 @@ public class Main {
             numbers.add(sc.nextInt());
         }
         System.out.println("Your list: "+numbers);
-        System.out.println("Max in this list is: "+maxInList(numbers));
+        System.out.println("Min in this list is: "+maxInList(numbers));
     }
 }
